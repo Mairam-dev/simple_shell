@@ -29,5 +29,7 @@ char *_strcpy(char *dest, char *src);
 char *_strcat(char *dest, char *src);
 int _strcmp(char *string_1, char *string_2);
 int _strlen(char *a);
-
+ssize_t _getline(char **buffer, size_t *limit);
+ssize_t _readline(int fd, char **buffer, size_t *limit);
+int _filemode(int fd);
 #endif
